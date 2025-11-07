@@ -1,3 +1,7 @@
+/******************************************************/
+/** GENERAL **/
+/******************************************************/
+
 * {
   margin: 0;
   padding: 0;
@@ -31,18 +35,26 @@ body {
   margin-bottom: 3.2rem;
   text-transform: uppercase;
   color: #fff;
+  text-transform: uppercase;
 }
 
 .heading__secondary {
   font-size: 4.4rem;
   line-height: 1.2;
   margin-bottom: 9.6rem;
+  text-transform: uppercase;
 }
 
 .heading__tertiary {
   font-size: 2.4rem;
   line-height: 1.2;
-  margin-bottom: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.heading__description {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 4.8rem;
 }
 
 .btn:link,
@@ -50,7 +62,7 @@ body {
   text-decoration: none;
   color: white;
   display: inline-block;
-  padding: 1.6rem 2.4rem;
+  padding: 1.6rem 3.2rem;
   border-radius: 2rem;
   background-color: #3bc9db;
   cursor: pointer;
@@ -82,6 +94,14 @@ body {
   column-gap: 6.4rem;
 }
 
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--2-rows {
+  grid-template-rows: repeat(2, 1fr);
+}
+
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
 }
@@ -93,6 +113,10 @@ body {
 
 .grid--3-rows {
   grid-template-rows: repeat(3, auto);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 /******************************************************/
@@ -219,7 +243,7 @@ body {
 }
 
 /******************************************************/
-/** SECTION TESTIMONIALS **/
+/** TESTIMONIALS SECTION **/
 /******************************************************/
 
 .section-testimonials {
@@ -249,7 +273,7 @@ body {
 }
 
 /******************************************************/
-/** SECTION FEATURES **/
+/** FEATURES SECTION **/
 /******************************************************/
 
 .section-features {
@@ -263,15 +287,9 @@ body {
   margin-bottom: 2.4rem;
 }
 
-.heading__description {
-  text-align: center;
-  font-size: 1.8rem;
-  margin-bottom: 4.8rem;
-}
-
 .feature__item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 2.4rem;
 }
 
@@ -312,4 +330,97 @@ body {
 .feature__description {
   font-size: 1.6rem;
   line-height: 1.7;
+}
+
+/******************************************************/
+/** PREVIEW SECTION **/
+/******************************************************/
+
+.section-preview {
+  padding: 9.6rem 0;
+  color: #fff;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(92, 124, 250, 0.5),
+      rgba(59, 91, 219, 0.5)
+    ),
+    url("../images/video-background.jpg");
+}
+
+.preview__heading {
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.preview__img__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview__img {
+  max-width: 60%;
+}
+
+/******************************************************/
+/** DETAILS SECTION **/
+/******************************************************/
+
+.section-details {
+  padding: 9.6rem 0;
+  background-color: #17161d;
+
+  color: #fff;
+}
+
+.section-details .container .grid {
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 12.8rem;
+}
+
+.details__description {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+.btn--details {
+  font-size: 1.6rem;
+}
+
+.details--cart {
+  transition: all 0.4s;
+}
+
+.details--cart:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 0 0 0.8rem rgba(12, 50, 86, 0.5);
+}
+
+.statistics__col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.statistics__icon {
+  width: 6rem;
+  height: 6rem;
+  fill: #3bc9db;
+}
+
+.statistics__data,
+.statistics__element {
+  font-weight: 600;
+}
+.statistics__data {
+  font-size: 3rem;
+}
+
+.statistics__element {
+  font-size: 1.6rem;
+  text-transform: capitalize;
 }
