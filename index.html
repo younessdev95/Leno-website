@@ -10,6 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/general.css" />
 
@@ -23,11 +26,11 @@
       <div class="links__container">
         <nav class="main__nav">
           <ul class="main__nav__list">
-            <li><a class="main__nav__link" href="#">Home</a></li>
-            <li><a class="main__nav__link" href="#">Features</a></li>
-            <li><a class="main__nav__link" href="#">Preview</a></li>
-            <li><a class="main__nav__link" href="#">Details</a></li>
-            <li><a class="main__nav__link" href="#">Download</a></li>
+            <li><a class="main__nav__link" href="#home">Home</a></li>
+            <li><a class="main__nav__link" href="#features">Features</a></li>
+            <li><a class="main__nav__link" href="#preview">Preview</a></li>
+            <li><a class="main__nav__link" href="#details">Details</a></li>
+            <li><a class="main__nav__link" href="#download">Download</a></li>
           </ul>
         </nav>
         <ul class="social__links__header">
@@ -45,7 +48,7 @@
       </div>
     </header>
     <main>
-      <section class="section-hero">
+      <section id="home" class="section-hero">
         <div class="hero">
           <div class="hero-text-box">
             <h1 class="heading__primary">
@@ -121,7 +124,7 @@
         </div>
       </section>
 
-      <section class="section-features">
+      <section id="features" class="section-features">
         <div class="container">
           <h2 class="heading__secondary feature__heading">Key Takeaways</h2>
           <p class="heading__description">
@@ -220,7 +223,7 @@
         </div>
       </section>
 
-      <section class="section-preview">
+      <section id="preview" class="section-preview">
         <div class="container">
           <h2 class="heading__secondary preview__heading">Preview</h2>
           <p class="heading__description">
@@ -236,7 +239,7 @@
         </div>
       </section>
 
-      <section class="section-details">
+      <section id="details" class="section-details">
         <div class="container">
           <div class="grid grid--2-cols grid--2-rows">
             <img src="./images/details-1.png" alt="Leno App Details" />
@@ -327,7 +330,7 @@
         </div>
       </section>
 
-      <section class="section-download">
+      <section id="download" class="section-download">
         <div class="container">
           <div class="download__container grid grid--2-cols">
             <div class="download__text">
@@ -354,6 +357,44 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container grid grid__footer">
+        <div class="footer__col">
+          <p class="footer__heading">About Leno</p>
+          <p class="footer__text">
+            Leno is mobile app that helps you stay focused and improve your
+            productivity. The app provides you with tools to set goals, track
+            your progress, and maintain a healthy work-life balance.
+          </p>
+        </div>
+        <div class="footer__col">
+          <p class="footer__heading">Quick Links</p>
+          <ul class="footer__nav">
+            <li><a class="footer__link" href="#">Home</a></li>
+            <li><a class="footer__link" href="#">Testimonials</a></li>
+            <li><a class="footer__link" href="#">Features</a></li>
+            <li><a class="footer__link" href="#">Preview</a></li>
+            <li><a class="footer__link" href="#">Details</a></li>
+            <li><a class="footer__link" href="#">Download</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <a class="footer__link" href="#"
+            ><ion-icon class="footer__icon" name="logo-facebook"></ion-icon
+          ></a>
+          <a class="footer__link" href="#"
+            ><ion-icon class="footer__icon" name="logo-twitter"></ion-icon
+          ></a>
+          <a class="footer__link" href="#"
+            ><ion-icon class="footer__icon" name="logo-instagram"></ion-icon
+          ></a>
+          <a class="footer__link" href="#"
+            ><ion-icon class="footer__icon" name="logo-linkedin"></ion-icon
+          ></a>
+        </div>
+      </div>
+    </footer>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

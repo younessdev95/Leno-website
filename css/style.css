@@ -378,3 +378,71 @@
 .btn.btn--sub:active {
   background-color: transparent;
 }
+
+/******************************************************/
+/** FOOTER **/
+/******************************************************/
+
+.footer {
+  padding: 9.6rem 0;
+  background-color: #17161d;
+  color: #fff;
+}
+
+.grid__footer {
+  grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+  justify-items: start;
+}
+
+.footer__col:not(:last-child) {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer__col:last-child {
+  align-self: center;
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.footer__heading {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.footer__text {
+  color: #ced4da;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.footer__icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.footer__nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer__link:link,
+.footer__link:visited {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #ced4da;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.footer__link:hover,
+.footer__link:active {
+  color: #3bc9db;
+}
