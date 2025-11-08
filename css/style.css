@@ -71,10 +71,27 @@
   color: #fff;
 }
 
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #fff;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
 /******************************************************/
 /** HOME SECTION **/
 /******************************************************/
-
 .section-hero {
   background-image: linear-gradient(
       to right bottom,
