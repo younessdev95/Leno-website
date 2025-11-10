@@ -224,6 +224,11 @@
   line-height: 1.7;
 }
 
+.grid--sub.grid--3-cols-sub.grid--3-rows .feature__item:nth-child(3),
+.grid--sub.grid--3-cols-sub.grid--3-rows .feature__item:last-child {
+  align-self: end;
+}
+
 /******************************************************/
 /** PREVIEW SECTION **/
 /******************************************************/
